@@ -74,7 +74,7 @@ console.log(getLast(array2));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  for (index of array){
+  for (let index of array){
     if (index === value){
       return true;
     }else {
@@ -104,7 +104,7 @@ console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
   let sum = 0
-  for (item of array){
+  for (let item of array){
     sum += item;
   }
   // TODO: loop to add items
@@ -118,7 +118,7 @@ console.log(sumAll(array2));
 //     return an empty array. Note: The input array should not change.
 function positiveNums(array){
   let newArray = [];
-  for (item of array){
+  for (let item of array){
     if (item > 0){
       newArray.push(item);
     }
